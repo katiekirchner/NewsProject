@@ -26,10 +26,10 @@ root {
 
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-              rgba(255, 255, 255, 0.4),
-              rgba(255, 255, 255, 0.4),
-              rgba(255, 255, 255, 0.4)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5)),
               url("images/newsbackground.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -46,4 +46,19 @@ body {
     padding: 20px;
     background-color: white;
     opacity: 0.9;
+}
+
+
+.big-header{
+    font-size: 70px;    
+}
+
+.news-div{
+    display: flex;
+    flex-wrap: wrap; /* Optional. only if you want the items to wrap */
+    justify-content: center; /* For horizontal alignment */
+    align-items: center; /* For vertical alignment */
+    background-color: white;
+    opacity: .9;
+    
 }

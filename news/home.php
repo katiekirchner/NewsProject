@@ -7,7 +7,18 @@
     </head>
     <body>
         <?php include 'navbar.php';?>
-
+        <br>
+        <br>
+        <h1 class="didot-font big-header" align="center"> Today's Top News</h1>
+        
+        <br>
+        <div class="row centered">
+            <div class="col-md-3"><?php include 'newscontainer.php';?></div>
+            <div class="col-md-3"><?php include 'newscontainer.php';?></div>
+            <div class="col-md-3"><?php include 'newscontainer.php';?></div>
+            
+        </div>
+        
         
     <script src="scripts/test.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
