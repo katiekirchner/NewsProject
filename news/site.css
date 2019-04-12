@@ -26,11 +26,11 @@ root {
 
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5),
-              rgba(255, 255, 255, 0.5),
-              rgba(255, 255, 255, 0.5),
-              rgba(255, 255, 255, 0.5)),
-              url("images/newsbackground.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.25),
+              rgba(255, 255, 255, 0.25),
+              rgba(255, 255, 255, 0.25),
+              rgba(255, 255, 255, 0.25)),
+              url("images/coffeenews.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -38,6 +38,24 @@ body {
 
 
 }
+
+.h3-top{
+    vertical-align: top;
+}
+
+.white-hr{
+  border-color: white;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px;
+  margin-left: 150px;
+  margin-right: 150px;
+  opacity: .9;
+}
+
 
 .white-navbar{
     list-style-type: none;
@@ -50,15 +68,25 @@ body {
 
 
 .big-header{
-    font-size: 70px;    
+    font-size: 65px; 
+    color: black;    
 }
 
 .news-div{
     display: flex;
-    flex-wrap: wrap; /* Optional. only if you want the items to wrap */
     justify-content: center; /* For horizontal alignment */
-    align-items: center; /* For vertical alignment */
     background-color: white;
     opacity: .9;
+
+    -webkit-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
     
+}
+
+.centered-container{
+    height: auto;
+    margin: auto;
+    text-align: center;    
+  
 }
