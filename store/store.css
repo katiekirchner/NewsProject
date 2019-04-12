@@ -1,0 +1,137 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 14, 2019, 1:16:44 PM
+    Author     : katiekirchner
+*/
+body {
+  background-color: #CCEBDC;
+}
+
+.mint-background {
+  background-color: #CCEBDC;
+}
+
+.lightblue-background {
+  background-color: lightblue;
+}
+
+.lightgrey-background{
+    background-color: #C5C4C5;
+}
+
+.grey-background{
+    background-color: #A3A3A3;
+}
+
+.darkgrey-background{
+    background-color: #747374;
+}
+
+.seagreen-background{
+    background-color: darkseagreen;
+}
+
+.content-block{
+    display: inline-block;
+    width: 20%;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.orange-text{
+  color: orange;
+}
+
+.blue-text{
+  color: blue;
+}
+
+.red-text{
+  color:darkred;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.sansSerif-text{
+  font-family: sans-serif;
+}
+
+
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: darkseagreen;
+    
+}
+
+.navbar li{
+    display: inline;
+}
+
+.center-img{
+    display:block;
+    margin:auto;
+}
+.centered-container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: lightblue;
+    text-align: center;    
+  
+}
+
+.open-sign-image{
+    width: 400px;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    justify-content: center;
+}
+
+.gif{
+    width: auto;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.bordered-text{
+    border-style: solid;
+    border-color: black;
+}
+
+.fixed-height-box{
+    height: 90px;
+    border-style: solid;
+    border-color: black;
+
+    
+}
+
+.minimal{
+  border-color: gray;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px;
+  margin-left: 40px;
+  margin-right: 40px;
+    
+}
