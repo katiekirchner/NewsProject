@@ -17,3 +17,8 @@ root {
 .table {
   border-spacing: 5px;
 }
+
+
+body {
+  background: url(image/newsbackground.jpg);
+}
