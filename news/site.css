@@ -18,7 +18,32 @@ root {
   border-spacing: 5px;
 }
 
+.didot-font{
+    font: Didot;
+    font-family: serif;
+    
+}
+
 
 body {
-  background: url(image/newsbackground.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+              rgba(255, 255, 255, 0.4),
+              rgba(255, 255, 255, 0.4),
+              rgba(255, 255, 255, 0.4)),
+              url("images/newsbackground.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+.white-navbar{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.9;
 }
