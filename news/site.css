@@ -77,7 +77,7 @@ body {
     justify-content: center; /* For horizontal alignment */
     background-color: white;
     opacity: .9;
-
+    border-radius: 5px;
     -webkit-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
     box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
