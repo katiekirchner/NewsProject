@@ -1,41 +1,45 @@
-const app = document.getElementById('root');
+/*global document: false */
 
-const logo = document.createElement('img');
-logo.src = 'logo.png';
+var app = document.getElementById('root');
 
-const container = document.createElement('div');
+var container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-app.appendChild(logo);
+
 app.appendChild(container);
 
-var request = new XMLHttpRequest();
-request.open('GET', 'https://newsapi.org/v2/everything?domains=wsj.com', true);
-request.onload = function () {
+var url = 'https://newsapi.org/v2/top-headlines?' +
+          'country=us&' +
+          'apiKey=dda138d75e5741048e1a9902fdee83c0';
+var req = new Request(url);
+fetch(req)
+    .then(function (response) {
+      if (response.status >= 200 && response.status < 400) {
 
- // Begin accessing JSON data here
- var data = JSON.parse(this.response);
- if (request.status >= 200 && request.status < 400) {
-   data.forEach(movie => {
-     const card = document.createElement('div');
-     card.setAttribute('class', 'card');
+        // console.log(response.json());
+            response.json().then(function (data) {
 
-     const h1 = document.createElement('h1');
-     h1.textContent = movie.title;
+                var card = document.createElement('div');
+                card.setAttribute('class', 'card');
 
-     const p = document.createElement('p');
-     movie.description = movie.description.substring(0, 300);
-     p.textContent = `${movie.description}...`;
+                var h1 = document.createElement('h1');
+                h1.textContent = data.title;
 
-     container.appendChild(card);
-     card.appendChild(h1);
-     card.appendChild(p);
-   });
- } else {
-   const errorMessage = document.createElement('marquee');
-   errorMessage.textContent = `Gah, it's not working!`;
-   app.appendChild(errorMessage);
- }
-}
+                var p = document.createElement('p');
+                p.textContent = data.description;
 
-request.send();
+                container.appendChild(card);
+                card.appendChild(h1);
+                card.appendChild(p);
+
+                console.log(data);
+
+
+            });
+
+        } else {
+        // var errorMessage = document.createElement('marquee');
+        // errorMessage.textContent = `Gah, it's not working!`;
+        // app.appendChild(errorMessage);
+        }
+    });

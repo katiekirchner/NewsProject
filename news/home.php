@@ -8,27 +8,18 @@
     </head>
     <body>
         <?php include 'navbar.php';?>
-        <br><br><br><br><br><br><br><br><br><br>
+        <br><br>
 
         <h1 class="didot-font big-header" align="center">News for
           <?php include 'timestamp.php';?>
-            <!-- <?php echo "" .date("l, F jS Y") . "<br>"; ?> -->
         </h1>
 
         <br>
         <hr class="white-hr">
         <br>
-        <br>
-        <div class="centered-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4"><?php include 'newscontainer.php';?></div>
-                    <div class="col-md-4"><?php include 'newscontainer.php';?></div>
-                    <div class="col-md-4"><?php include 'newscontainer.php';?></div>
 
-                </div>
-            </div>
-        </div>
+
+        <div id="root"></div>
     <script src="scripts/test.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">

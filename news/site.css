@@ -1,17 +1,10 @@
-root {
-  display: block;
+#root {
+ max-width: 1200px;
+ margin: 0 auto;
 }
 
 .centered {
   text-align: center;
-}
-
-.blue-text{
-  color: blue;
-}
-
-.sansSerif{
-  font-family: sans-serif;
 }
 
 .table {
@@ -21,16 +14,39 @@ root {
 .didot-font{
     font: Didot;
     font-family: serif;
-    
+
+}
+
+.card {
+ margin: 1rem;
+ border: 1px solid gray;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 600px) {
+ .card {
+   flex: 1 1 calc(50% - 2rem);
+ }
+}
+
+@media screen and (min-width: 900px) {
+ .card {
+   flex: 1 1 calc(33% - 2rem);
+ }
 }
 
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.25),
-              rgba(255, 255, 255, 0.25),
-              rgba(255, 255, 255, 0.25),
-              rgba(255, 255, 255, 0.25)),
-              url("images/coffeenews.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5)),
+              url("images/newspic.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -68,8 +84,8 @@ body {
 
 
 .big-header{
-    font-size: 65px; 
-    color: black;    
+    font-size: 65px;
+    color: black;
 }
 
 .news-div{
@@ -81,12 +97,12 @@ body {
     -webkit-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
     box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.5);
-    
+
 }
 
 .centered-container{
     height: auto;
     margin: auto;
-    text-align: center;    
-  
+    text-align: center;
+
 }
