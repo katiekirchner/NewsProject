@@ -7,16 +7,17 @@ container.setAttribute('class', 'container');
 
 app.appendChild(container);
 
+
 var request = new XMLHttpRequest();
 request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&apiKey=dda138d75e5741048e1a9902fdee83c0', true);
 
 request.onload = function() {
-  var data = JSON.parse(this.response);
+  var objects = JSON.parse(this.response);
 
 
   if (request.status >= 200 && request.status < 400) {
 
-      var data = Object.values(data)[2];
+      var data = Object.values(objects)[2];
 
       data.shift();
       data.shift();
@@ -29,8 +30,16 @@ request.onload = function() {
           image.setAttribute('class', 'card-image');
           image.src = data[i].urlToImage;
 
+          var link = data[i].url;
+
+
           var card = document.createElement('div');
           card.setAttribute('class', 'card');
+          card.addEventListener('click', function() {
+              window.open(link);
+          }, false);
+
+
 
           var h1 = document.createElement('h1');
           h1.setAttribute('class', 'card-header');
@@ -48,7 +57,7 @@ request.onload = function() {
      };
   } else {
     var errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Gah, it's not working!`;
+    errorMessage.textContent = `Error accessing API`;
     app.appendChild(errorMessage);
   }
 

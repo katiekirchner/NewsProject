@@ -10,17 +10,16 @@
         <?php include 'navbar.php';?>
         <br><br>
 
-        <h1 class="didot-font big-header" align="center">News for
-          <?php include 'timestamp.php';?>
-        </h1>
+        <h1 class="didot-font big-header" align="center">Today's Top News</h1>
+        <h2 class="didot-font" align="center"><?php include 'timestamp.php';?></h2>
 
         <br>
         <hr class="white-hr">
         <br>
 
+        <div id="root"></div>
 
-        <div id="root">
-        </div>
+
     <script src="scripts/test.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">

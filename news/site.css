@@ -20,12 +20,18 @@
 .card {
  margin: 1rem;
  border: 1px solid gray;
+ display: flex;
+
 }
+
 
 .container {
  display: flex;
  flex-wrap: wrap;
 }
+
+
+
 
 .card-header{
   font: Didot;
@@ -48,13 +54,13 @@
 
 @media screen and (min-width: 600px) {
  .card {
-   flex: 1 1 calc(50% - 2rem);
+   flex: 1 calc(90% - 1rem);
  }
 }
 
 @media screen and (min-width: 900px) {
  .card {
-   flex: 1 1 calc(33% - 2rem);
+   flex: 1 calc(33% - 1rem);
  }
 }
 
