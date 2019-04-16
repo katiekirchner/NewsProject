@@ -5,6 +5,10 @@ var app = document.getElementById('root');
 var container = document.createElement('div');
 container.setAttribute('class', 'container');
 
+var card = document.createElement('div');
+var h1 = document.createElement('h1');
+var p = document.createElement('p');
+
 
 app.appendChild(container);
 
@@ -16,24 +20,21 @@ fetch(req)
     .then(function (response) {
       if (response.status >= 200 && response.status < 400) {
 
-        // console.log(response.json());
             response.json().then(function (data) {
 
-                var card = document.createElement('div');
-                card.setAttribute('class', 'card');
+              for(var i = 0; i < data.msg.length; i++){
+                  card.setAttribute('class', 'card');
 
-                var h1 = document.createElement('h1');
-                h1.textContent = data.title;
+                  h1.textContent = data.title;
 
-                var p = document.createElement('p');
-                p.textContent = data.description;
+                  p.textContent = data.description;
 
-                container.appendChild(card);
-                card.appendChild(h1);
-                card.appendChild(p);
+                  container.appendChild(card);
+                  card.appendChild(h1);
+                  card.appendChild(p);
 
-                console.log(data);
-
+                  console.log(data);
+              };
 
             });
 
@@ -43,3 +44,5 @@ fetch(req)
         // app.appendChild(errorMessage);
         }
     });
+
+request.send();

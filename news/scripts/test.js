@@ -1,39 +1,58 @@
 
-const app = document.getElementById('root')
+var app = document.getElementById('root');
 
-const container = document.createElement('div')
-container.setAttribute('class', 'container')
 
-app.appendChild(container)
+var container = document.createElement('div');
+container.setAttribute('class', 'container');
 
-var request = new XMLHttpRequest()
-request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&apiKey=dda138d75e5741048e1a9902fdee83c0', true)
+app.appendChild(container);
+
+var request = new XMLHttpRequest();
+request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&apiKey=dda138d75e5741048e1a9902fdee83c0', true);
 
 request.onload = function() {
-  // Begin accessing JSON data here
-  var data = JSON.parse(data);
+  var data = JSON.parse(this.response);
+
 
   if (request.status >= 200 && request.status < 400) {
-    data.forEach(article => {
-      const card = document.createElement('div')
-      card.setAttribute('class', 'card')
 
-      const h1 = document.createElement('h1')
-      h1.textContent = article.title
+      var data = Object.values(data)[2];
 
-      const p = document.createElement('p')
-      article.description = article.description.substring(0, 300)
-      p.textContent = `${article.description}...`
+      data.shift();
+      data.shift();
 
-      container.appendChild(card)
-      card.appendChild(h1)
-      card.appendChild(p)
-    })
+      console.log(data);
+
+        for (var i=0; i<data.length; i++) {
+
+          var image = document.createElement('img');
+          image.setAttribute('class', 'card-image');
+          image.src = data[i].urlToImage;
+
+          var card = document.createElement('div');
+          card.setAttribute('class', 'card');
+
+          var h1 = document.createElement('h1');
+          h1.setAttribute('class', 'card-header');
+          h1.textContent = data[i].title;
+
+          var p = document.createElement('p');
+          p.setAttribute('class', 'card-p');
+          // key.description = key.description.substring(0, 300);
+          p.textContent = data[i].description;
+
+          container.appendChild(card);
+          card.appendChild(image);
+          card.appendChild(h1);
+          card.appendChild(p);
+     };
   } else {
-    const errorMessage = document.createElement('marquee')
-    errorMessage.textContent = `Gah, it's not working!`
-    app.appendChild(errorMessage)
+    var errorMessage = document.createElement('marquee');
+    errorMessage.textContent = `Gah, it's not working!`;
+    app.appendChild(errorMessage);
   }
-}
 
-request.send()
+};
+
+
+request.send();

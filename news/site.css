@@ -27,6 +27,24 @@
  flex-wrap: wrap;
 }
 
+.card-header{
+  font: Didot;
+  font-family: serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-p {
+  font: Didot;
+  font-family: serif;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.card-image{
+  margin: 5px;
+  max-width:100%;
+}
 
 @media screen and (min-width: 600px) {
  .card {

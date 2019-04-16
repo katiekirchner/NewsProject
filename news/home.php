@@ -19,7 +19,8 @@
         <br>
 
 
-        <div id="root"></div>
+        <div id="root">
+        </div>
     <script src="scripts/test.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">
