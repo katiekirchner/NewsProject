@@ -11,7 +11,7 @@
         <br><br>
 
         <h1 class="didot-font big-header" align="center">Today's Top News</h1>
-        <h2 class="didot-font" align="center"><?php include 'timestamp.php';?></h2>
+        <h2 class="didot-font" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
 
         <br>
         <hr class="white-hr">
