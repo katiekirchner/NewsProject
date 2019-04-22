@@ -35,17 +35,15 @@ request.onload = function() {
           var aWrapper = document.createElement('a');
           aWrapper.setAttribute('class', 'a-card');
           aWrapper.setAttribute('href', link);
-          aWrapper.addEventListener('click', function() {
-              window.open(this.link)
-          }, false);
+          aWrapper.setAttribute('target', "_blank")
+          // aWrapper.addEventListener('click', function() {
+          //     window.open(this.link)
+          // }, false);
 
 
 
           var card = document.createElement('div');
           card.setAttribute('class', 'card');
-
-
-
 
 
           var h1 = document.createElement('h1');
