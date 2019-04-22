@@ -32,12 +32,19 @@ request.onload = function() {
 
           var link = data[i].url;
 
+          var aWrapper = document.createElement('a');
+          aWrapper.setAttribute('class', 'a-card');
+          aWrapper.setAttribute('href', link);
+          aWrapper.addEventListener('click', function() {
+              window.open(this.link)
+          }, false);
+
+
 
           var card = document.createElement('div');
           card.setAttribute('class', 'card');
-          card.addEventListener('click', function() {
-              window.open(link);
-          }, false);
+
+
 
 
 
@@ -51,6 +58,7 @@ request.onload = function() {
           p.textContent = data[i].description;
 
           container.appendChild(card);
+          card.appendChild(aWrapper);
           card.appendChild(image);
           card.appendChild(h1);
           card.appendChild(p);

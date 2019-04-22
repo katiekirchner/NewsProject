@@ -17,6 +17,14 @@
 
 }
 
+.a-card {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+  target="_blank";
+}
+
+
 .card {
  margin: 1rem;
  border: 1px solid gray;
