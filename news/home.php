@@ -16,11 +16,16 @@
         <br>
         <hr class="white-hr">
         <br>
+        <!-- <div id="test" class="side-div"> -->
+        </div>
 
-        <div id="root"></div>
+        <!-- <br><br><br><br><br><br><br> -->
+        <div id="root" class="side-div"></div>
 
 
-    <script src="scripts/test.js"></script>
+    <!-- <script src="scripts/test.js"></script> -->
+
+    <script src="scripts/top_news.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">
     </script>

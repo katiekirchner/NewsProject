@@ -1,5 +1,6 @@
-#root {
- max-width: 1200px;
+
+#test {
+ /* max-width: auto; */
  margin: 0 auto;
 }
 
@@ -17,6 +18,11 @@
 
 }
 
+.side-div{
+  display: flex;
+  overflow-x: auto;
+}
+
 .a-card {
   position: absolute;
   top: 0; left: 0;
@@ -28,6 +34,11 @@
  margin: 1rem;
  border: 1px solid gray;
  display: flex;
+ flex-direction: row;
+ min-width: unset !important;
+ height: auto;
+ width: auto;
+ background-color: white;
 
 }
 
@@ -36,7 +47,6 @@
  display: flex;
  flex-wrap: wrap;
 }
-
 
 
 
@@ -51,15 +61,39 @@
   font: Didot;
   font-family: serif;
   margin: 10px;
+  font-size: 12px;
+}
+
+.card-desc {
+  font: Didot;
+  font-family: serif;
+  padding-top: 20px;
+  margin: 10px;
   font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
+.card-hr{
+  border-color: grey;
+  /* display: block; */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px;
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+
 }
 
 .card-image{
-  margin: 5px;
-  max-width:100%;
+  margin: 10px;
+  max-width: 60vh;
+  max-height: 60vh;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
  .card {
    flex: 1 calc(90% - 1rem);
  }
@@ -69,7 +103,7 @@
  .card {
    flex: 1 calc(33% - 1rem);
  }
-}
+} */
 
 
 body {
@@ -137,3 +171,221 @@ body {
     text-align: center;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #root {
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.centered {
+  text-align: center;
+}
+
+.table {
+  border-spacing: 5px;
+}
+
+.didot-font{
+    font-family: didot;
+    font-family: serif;
+}
+
+.side-div{
+  display: flex;
+  overflow-x: auto;
+}
+
+.a-card {
+  position: fi;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+}
+
+
+.card {
+ margin: 1rem;
+ border: 1px solid gray;
+ display: flex;
+
+}
+
+
+/* @media screen and (min-width: 900px) {
+ .card-test {
+   flex: 1 calc(90% - 1rem);
+ }
+}
+
+@media screen and (min-width: 900px) {
+ .card-test {
+   flex: 1 calc(33% - 1rem);
+ }
+} */
+
+/* .card-test {
+ margin: 1rem;
+ border: 1px solid gray;
+ display: inline-block;
+ flex-wrap: wrap;
+ height: auto;
+ width: auto;
+ background-color: white;
+
+}
+
+.card-test-image{
+  margin: 10px;
+  max-width: 50vh;
+  max-height: 50vh;
+}
+
+.card-test-header{
+  font: Didot;
+  font-family: serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-test-p {
+  font: Didot;
+  font-family: serif;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.card {
+ margin: 1rem;
+ border: 1px solid gray;
+ display: inline-block;
+ flex-wrap: wrap;
+ height: auto;
+ width: 100vh;
+ background-color: white;
+}
+
+.card-image{
+  margin: 5px;
+  max-width: 50vh;
+  max-height: 50vh;
+}
+
+.card-header{
+  font: Didot;
+  font-family: serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-p {
+  font: Didot;
+  font-family: serif;
+  margin: 10px;
+  font-size: 15px;
+}
+
+
+
+/* .card-header{
+  font: Didot;
+  font-family: serif;
+  text-align: center;
+  font-size: 20px;
+} */
+
+/* .card-p {
+  font: Didot;
+  font-family: serif;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.card-image{
+  margin: 5px;
+  max-width:100%;
+} */
+
+/* @media screen and (min-width: 900px) {
+ .card {
+   flex: 1 calc(90% - 1rem);
+ }
+}
+
+@media screen and (min-width: 900px) {
+ .card {
+   flex: 1 calc(33% - 1rem);
+ }
+}
+
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2),
+              rgba(255, 255, 255, 0.2),
+              rgba(255, 255, 255, 0.2),
+              rgba(255, 255, 255, 0.2)),
+              url("images/coffeenews.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+.h3-top{
+    vertical-align: top;
+}
+
+.white-hr{
+  border-color: white;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px;
+  margin-left: 150px;
+  margin-right: 150px;
+  opacity: .9;
+}
+
+
+.white-navbar{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+
+.big-header{
+    font-size: 65px;
+    color: white;
+}
+
+.centered-container{
+    height: auto;
+    margin: auto;
+    text-align: center;
+}  */

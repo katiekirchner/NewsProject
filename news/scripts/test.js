@@ -1,9 +1,7 @@
-
-var app = document.getElementById('root');
-
+var app = document.getElementById('test');
 
 var container = document.createElement('div');
-container.setAttribute('class', 'container');
+container.setAttribute('class', 'side-div');
 
 app.appendChild(container);
 
@@ -36,10 +34,6 @@ request.onload = function() {
           aWrapper.setAttribute('class', 'a-card');
           aWrapper.setAttribute('href', link);
           aWrapper.setAttribute('target', "_blank")
-          // aWrapper.addEventListener('click', function() {
-          //     window.open(this.link)
-          // }, false);
-
 
 
           var card = document.createElement('div');
