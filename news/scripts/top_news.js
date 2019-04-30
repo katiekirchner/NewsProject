@@ -25,7 +25,7 @@ request.onload = function() {
 
         for (var i=0; i<data.length; i++) {
           var valid = false;
-          if (data[i].content != null){
+          if (data[i].content != null && data[i].urlToImage != null){
             valid = true;
           };
 
