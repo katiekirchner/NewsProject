@@ -14,7 +14,7 @@
                   <a href="store_about.php" class="didot-font" style="color: black;margin: 15px">Science & Technology</a>
                 </li>
                 <li class="nav-item">
-                  <a href="store_visitor_log.php" class="didot-font" style="color: black; margin: 15px">Sports</a>
+                  <a href="sports.php" class="didot-font" style="color: black; margin: 15px">Sports</a>
                 </li>
             </div>
   </nav>
