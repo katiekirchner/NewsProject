@@ -33,9 +33,11 @@ request.onload = function() {
           if (valid){
             var image = document.createElement('img');
             image.setAttribute('class', 'card-image');
+            // image.setAttribute('class', 'lazyload');
             image.src = data[i].urlToImage;
 
             var link = data[i].url;
+            var elipsis = data[i].content.indexOf('[');
 
             var aWrapper = document.createElement('a');
             aWrapper.setAttribute('class', 'a-card');
@@ -53,17 +55,18 @@ request.onload = function() {
 
             var description = document.createElement('p');
             description.setAttribute('class', 'card-desc');
-            // key.description = key.description.substring(0, 300);
             description.textContent = data[i].description;
 
             var p = document.createElement('p');
             p.setAttribute('class', 'card-p');
-            // key.description = key.description.substring(0, 300);
-            // p.textContent = data[i].content;
-            p.textContent = data[i].content.substring(0, 250)+"....";
+            p.textContent = data[i].content.substring(0, elipsis);
 
             var hr = document.createElement('hr');
             hr.setAttribute('class', 'card-hr');
+
+            var cont = document.createElement('p');
+            cont.setAttribute('class', 'cont-reading');
+            cont.textContent = "Click to view full article.";
 
             container.appendChild(card);
             card.appendChild(aWrapper);
@@ -72,6 +75,7 @@ request.onload = function() {
             card.appendChild(description);
             card.appendChild(hr);
             card.appendChild(p);
+            card.appendChild(cont);
           };
 
      };

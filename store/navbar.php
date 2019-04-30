@@ -16,5 +16,8 @@
                 <li class="nav-item">
                   <a href="store_visitor_log.php" style="color: black;margin: 10px">Visitor Log</a>
                 </li>
+                <li class="nav-item">
+                  <a href="store_newsletter_signup.php" style="color: black;margin: 10px">Newsletter Sign Up</a>
+                </li>
             </div>
   </nav>
