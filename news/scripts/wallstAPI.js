@@ -39,9 +39,9 @@ fetch(req)
             });
 
         } else {
-        // var errorMessage = document.createElement('marquee');
-        // errorMessage.textContent = `Gah, it's not working!`;
-        // app.appendChild(errorMessage);
+          var errorMessage = document.createElement('marquee');
+          errorMessage.textContent = `Error accessing API`;
+          app.appendChild(errorMessage);
         }
     });
 
