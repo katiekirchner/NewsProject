@@ -19,5 +19,8 @@
                 <li class="nav-item">
                   <a href="sports.php" class="didot-font" style="color: black; margin: 15px">Sports</a>
                 </li>
+                <li class="nav-item">
+                  <a href="my_articles.php" class="didot-font right" style="color: black; margin: 15px">My Articles</a>
+                </li>
             </div>
   </nav>
