@@ -42,7 +42,7 @@
  min-width: unset !important;
  min-height: unset !important;
  height: auto;
- width: auto;
+ width: 700px;
  background-color: white;
  opacity: 0.95;
 }
@@ -95,6 +95,7 @@
   margin: 10px;
   max-width: 500px;
   max-height: 300px;
+  min-width: 400px;
 }
 
 .cont-reading {
