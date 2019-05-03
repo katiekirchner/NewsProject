@@ -8,9 +8,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a href="store_hours.php" class="didot-font" style="color: black; margin: 15px">Politics</a>
-                </li>
-                <li class="nav-item">
                   <a href="science.php" class="didot-font" style="color: black;margin: 15px">Science</a>
                 </li>
                 <li class="nav-item">
@@ -18,6 +15,9 @@
                 </li>
                 <li class="nav-item">
                   <a href="sports.php" class="didot-font" style="color: black; margin: 15px">Sports</a>
+                </li>
+                <li class="nav-item">
+                  <a href="entertainment.php" class="didot-font" style="color: black; margin: 15px">Entertainment</a>
                 </li>
                 <li class="nav-item">
                   <a href="my_articles.php" class="didot-font right" style="color: black; margin: 15px">My Articles</a>

@@ -12,7 +12,7 @@
         <?php include 'navbar.php';?>
         <br><br>
 
-        <h1 class="didot-font big-header centered" align="center">Today's Science News</h1><br>
+        <h1 class="didot-font big-header centered" align="center">Science</h1><br>
         <h2 class="didot-font centered" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
 
         <br>
