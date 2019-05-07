@@ -38,6 +38,7 @@ request.onload = function() {
 
             var link = data[i].url;
             var elipsis = data[i].content.indexOf('[');
+            var dash = data[i].title.indexOf('-')-1;
 
             var aWrapper = document.createElement('a');
             aWrapper.setAttribute('class', 'a-card');
@@ -51,11 +52,11 @@ request.onload = function() {
 
             var h1 = document.createElement('h1');
             h1.setAttribute('class', 'card-header');
-            h1.textContent = data[i].title;
+            h1.textContent = data[i].title.substring(0, dash);
 
             var description = document.createElement('p');
             description.setAttribute('class', 'card-desc');
-            description.textContent = data[i].description;
+            description.textContent = data[i].description.substring(0, 100);
 
             var p = document.createElement('p');
             p.setAttribute('class', 'card-p');
@@ -68,6 +69,11 @@ request.onload = function() {
             cont.setAttribute('class', 'cont-reading');
             cont.textContent = "Click to view full article.";
 
+
+            var button = document.createElement('button');
+            button.setAttribute('class', 'card-button');
+            button.textContent = "Add to My Articles";
+
             container.appendChild(card);
             card.appendChild(aWrapper);
             card.appendChild(image);
@@ -76,6 +82,7 @@ request.onload = function() {
             card.appendChild(hr);
             card.appendChild(p);
             card.appendChild(cont);
+            card.appendChild(button);
           };
 
      };
