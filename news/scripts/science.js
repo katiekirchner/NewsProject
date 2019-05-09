@@ -68,6 +68,11 @@ request.onload = function() {
             cont.setAttribute('class', 'cont-reading');
             cont.textContent = "Click to view full article.";
 
+
+            var button = document.createElement('button');
+            button.setAttribute('class', 'card-button');
+            button.textContent = "Add to My Articles";
+
             container.appendChild(card);
             card.appendChild(aWrapper);
             card.appendChild(image);
@@ -76,6 +81,8 @@ request.onload = function() {
             card.appendChild(hr);
             card.appendChild(p);
             card.appendChild(cont);
+            card.appendChild(button);
+
           };
 
      };

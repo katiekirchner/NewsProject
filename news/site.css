@@ -27,32 +27,32 @@
 
 }
 
-.side-div::-webkit-scrollbar {
+/* .side-div::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .a-card {
   position: absolute;
   top: 0; left: 0;
-  height: 90%; width: 100%;
+  height: 100%; width: 100%;
 }
 
 
 .card {
- margin: 1rem;
- border: 1px solid gray;
- display: flex;
- flex-direction: row;
- min-width: unset !important;
- min-height: unset !important;
- height: auto;
- width: 700px;
- background-color: white;
- opacity: 0.95;
+   margin: 1rem;
+   border: 1px solid gray;
+   display: flex;
+   flex-direction: row;
+   min-width: unset !important;
+   min-height: unset !important;
+   height: auto;
+   width: 700px;
+   background-color: white;
+   opacity: 0.95;
 }
 
 .card-button {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   background-color: #cce6ff;
   border: none;
   color: black;
@@ -60,11 +60,13 @@
   text-align: center;
   font-size: 13px;
   position: relative;
-  bottom:   0;
-  width: 30%;
+  left: 32%;
+  width: 175px;
   font-family: didot;
   font-family: serif;
+  margin-bottom: 10px;
 }
+
 
 .container {
  display: flex;
@@ -122,15 +124,6 @@
   font-size: 10px;
   text-align: center;
   font-style: italic;
-}
-
-.my-button{
-  margin-top: 20px;
-  line-height: 60px;
-  font-weight: bold;
-  padding: 0 40px;
-  background: salmon;
-  border: none;
 }
 
 

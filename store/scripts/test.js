@@ -4,7 +4,7 @@ var element = elementsArray[0];
 var buttonElement = document.getElementById("title-button");
 
 function changeStyle() {
-  if(element.style.color === "black") {
+  if(element.style.color === "blue") {
      element.style.color = "yellow";
      element.classList.add("bordered-text");
   } else {
@@ -15,14 +15,14 @@ function changeStyle() {
 }
 
 //buttonElement.addEventListener("click", function(){
-//    
+//
 //    if (element.style.color === "black") {
-//        
+//
 //        element.style.color = "yellow";
 //        element.classList.add("bordered-text");
-//        
+//
 //  } else if (element.style.color === "yellow"){
-//      
+//
 //        element.style.color = "black";
 //  }
 //

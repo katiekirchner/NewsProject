@@ -37,8 +37,9 @@ request.onload = function() {
             image.src = data[i].urlToImage;
 
             var link = data[i].url;
-            var elipsis = data[i].content.indexOf('[');
-            var dash = data[i].title.indexOf('-')-1;
+            var bracket = data[i].content.indexOf('[');
+            var period = data[i].description.indexOf('.');
+            var dash = data[i].title.indexOf(' - ');
 
             var aWrapper = document.createElement('a');
             aWrapper.setAttribute('class', 'a-card');
@@ -56,11 +57,11 @@ request.onload = function() {
 
             var description = document.createElement('p');
             description.setAttribute('class', 'card-desc');
-            description.textContent = data[i].description.substring(0, 100);
+            description.textContent = data[i].description;
 
             var p = document.createElement('p');
             p.setAttribute('class', 'card-p');
-            p.textContent = data[i].content.substring(0, elipsis);
+            p.textContent = data[i].content.substring(0, bracket);
 
             var hr = document.createElement('hr');
             hr.setAttribute('class', 'card-hr');
@@ -72,6 +73,8 @@ request.onload = function() {
 
             var button = document.createElement('button');
             button.setAttribute('class', 'card-button');
+            // button.setAttribute('id', 'add_button');
+            button.setAttribute('onclick', 'addArticle()');
             button.textContent = "Add to My Articles";
 
             container.appendChild(card);
@@ -92,6 +95,18 @@ request.onload = function() {
     app.appendChild(errorMessage);
   }
 
+};
+
+var add_button = document.getElementsByClassName("card-button");
+console.log(add_button);
+
+for (var i = 0 ; i < add_button.length; i++) {
+  var change_button = add_button[i];
+  console.log(change_button);
+  function addArticle(){
+    change_button[i].style.backgroundColor="#9fdfbf";
+    change_button[i].textContent = "Added To My Articles";
+  }
 };
 
 
