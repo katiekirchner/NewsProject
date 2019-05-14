@@ -1,12 +1,10 @@
 
 var app = document.getElementById('root');
-app.setAttribute('class', 'side-div');
 
-// var container = document.createElement('div');
-// container.setAttribute('class', 'side-div');
-//
-//
-// app.appendChild(container);
+var container = document.createElement('div');
+container.setAttribute('class', 'side-div');
+
+app.appendChild(container);
 
 
 var request = new XMLHttpRequest();
@@ -14,7 +12,6 @@ request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&apiKey=dda1
 
 request.onload = function() {
   var objects = JSON.parse(this.response);
-
 
   if (request.status >= 200 && request.status < 400) {
 
@@ -43,7 +40,7 @@ request.onload = function() {
 
           var link = data[i].url;
           var bracket = data[i].content.indexOf('[');
-          var period = data[i].description.indexOf('.');
+          var elipsis = data[i].content.indexOf(' ... ');
           var dash = data[i].title.indexOf(' - ');
 
           var aWrapper = document.createElement('a');
@@ -66,7 +63,7 @@ request.onload = function() {
 
           var p = document.createElement('p');
           p.setAttribute('class', 'card-p');
-          p.textContent = data[i].content.substring(0, bracket);
+          p.textContent = data[i].content.substring(0, 261);
 
           var hr = document.createElement('hr');
           hr.setAttribute('class', 'card-hr');
@@ -81,7 +78,7 @@ request.onload = function() {
           // button.setAttribute('onclick', 'addArticle()');
           // button.textContent = "Add to My Articles";
 
-          app.appendChild(card);
+          container.appendChild(card);
           card.appendChild(aWrapper);
           card.appendChild(image);
           card.appendChild(h1);

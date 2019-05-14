@@ -40,7 +40,7 @@ request.onload = function() {
 
           var link = data[i].url;
           var bracket = data[i].content.indexOf('[');
-          var period = data[i].description.indexOf('.');
+          var elipsis = data[i].content.indexOf(' ... ');
           var dash = data[i].title.indexOf(' - ');
 
           var aWrapper = document.createElement('a');
@@ -63,7 +63,7 @@ request.onload = function() {
 
           var p = document.createElement('p');
           p.setAttribute('class', 'card-p');
-          p.textContent = data[i].content.substring(0, bracket);
+          p.textContent = data[i].content.substring(0, 261);
 
           var hr = document.createElement('hr');
           hr.setAttribute('class', 'card-hr');
