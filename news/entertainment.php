@@ -17,11 +17,12 @@
         <br>
         <hr class="white-hr">
         <br>
+        <div id="root"></div>
 
-        <div id="root" class="side-div"></div>
+        <!-- <div id="root" class="side-div"></div> -->
 
 
-    <script src="scripts/politics.js"></script>
+    <script src="scripts/entertainment.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">

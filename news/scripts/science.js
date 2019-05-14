@@ -13,7 +13,6 @@ request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&category=sc
 request.onload = function() {
   var objects = JSON.parse(this.response);
 
-
   if (request.status >= 200 && request.status < 400) {
 
       var data = Object.values(objects)[2];
@@ -23,76 +22,80 @@ request.onload = function() {
 
       console.log(data);
 
-        for (var i=0; i<data.length; i++) {
-          var valid = false;
-          if (data[i].content != null && data[i].urlToImage != null){
-            valid = true;
-          };
+      for (var i=0; i<data.length; i++) {
+        var valid = false;
+        if (data[i].urlToImage != null){
+          var https = data[i].urlToImage.substring(0,5);
+        }
+
+        if (data[i].content != null && (data[i].urlToImage != null || https != "https")){
+          valid = true;
+        };
 
 
-          if (valid){
-            var image = document.createElement('img');
-            image.setAttribute('class', 'card-image');
-            // image.setAttribute('class', 'lazyload');
-            image.src = data[i].urlToImage;
+        if (valid){
+          var image = document.createElement('img');
+          image.setAttribute('class', 'card-image');
+          image.src = data[i].urlToImage;
 
-            var link = data[i].url;
-            var elipsis = data[i].content.indexOf('[');
+          var link = data[i].url;
+          var bracket = data[i].content.indexOf('[');
+          var period = data[i].description.indexOf('.');
+          var dash = data[i].title.indexOf(' - ');
 
-            var aWrapper = document.createElement('a');
-            aWrapper.setAttribute('class', 'a-card');
-            aWrapper.setAttribute('href', link);
-            aWrapper.setAttribute('target', "_blank")
-
-
-            var card = document.createElement('div');
-            card.setAttribute('class', 'card');
+          var aWrapper = document.createElement('a');
+          aWrapper.setAttribute('class', 'a-card');
+          aWrapper.setAttribute('href', link);
+          aWrapper.setAttribute('target', "_blank")
 
 
-            var h1 = document.createElement('h1');
-            h1.setAttribute('class', 'card-header');
-            h1.textContent = data[i].title;
-
-            var description = document.createElement('p');
-            description.setAttribute('class', 'card-desc');
-            description.textContent = data[i].description;
-
-            var p = document.createElement('p');
-            p.setAttribute('class', 'card-p');
-            p.textContent = data[i].content.substring(0, elipsis);
-
-            var hr = document.createElement('hr');
-            hr.setAttribute('class', 'card-hr');
-
-            var cont = document.createElement('p');
-            cont.setAttribute('class', 'cont-reading');
-            cont.textContent = "Click to view full article.";
+          var card = document.createElement('div');
+          card.setAttribute('class', 'card');
 
 
-            var button = document.createElement('button');
-            button.setAttribute('class', 'card-button');
-            button.textContent = "Add to My Articles";
+          var h1 = document.createElement('h1');
+          h1.setAttribute('class', 'card-header');
+          h1.textContent = data[i].title.substring(0, dash);
 
-            container.appendChild(card);
-            card.appendChild(aWrapper);
-            card.appendChild(image);
-            card.appendChild(h1);
-            card.appendChild(description);
-            card.appendChild(hr);
-            card.appendChild(p);
-            card.appendChild(cont);
-            card.appendChild(button);
+          var description = document.createElement('p');
+          description.setAttribute('class', 'card-desc');
+          description.textContent = data[i].description;
 
-          };
+          var p = document.createElement('p');
+          p.setAttribute('class', 'card-p');
+          p.textContent = data[i].content.substring(0, bracket);
 
-     };
-  } else {
-    var errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Error accessing API`;
-    app.appendChild(errorMessage);
-  }
+          var hr = document.createElement('hr');
+          hr.setAttribute('class', 'card-hr');
+
+          var cont = document.createElement('p');
+          cont.setAttribute('class', 'cont-reading');
+          cont.textContent = "Click to view full article.";
+
+
+          // var button = document.createElement('button');
+          // button.setAttribute('class', 'card-button');
+          // button.setAttribute('onclick', 'addArticle()');
+          // button.textContent = "Add to My Articles";
+
+          container.appendChild(card);
+          card.appendChild(aWrapper);
+          card.appendChild(image);
+          card.appendChild(h1);
+          card.appendChild(description);
+          card.appendChild(hr);
+          card.appendChild(p);
+          card.appendChild(cont);
+          // card.appendChild(button);
+        };
+
+   };
+} else {
+  var errorMessage = document.createElement('marquee');
+  errorMessage.textContent = `Error accessing API`;
+  app.appendChild(errorMessage);
+}
 
 };
-
 
 request.send();

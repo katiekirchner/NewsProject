@@ -18,8 +18,10 @@
         <br>
         <hr class="white-hr">
         <br>
+        <div id="root"></div>
 
-        <div id="root" class="side-div"></div>
+
+        <!-- <div id="root" class="side-div"></div> -->
 
 
     <script src="scripts/tech.js"></script>
