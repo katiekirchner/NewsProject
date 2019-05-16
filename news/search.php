@@ -23,7 +23,9 @@
         ?>
         <!-- <h1 class="didot-font big-header centered" align="center">Search</h1><br> -->
         <h2 class="didot-font centered stamp" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
-
+        <script>
+           var param = "<?php echo $lookup; ?>";
+        </script>
         <br>
         <hr class="white-hr">
         <br>
@@ -32,9 +34,7 @@
         <!-- <div id="root" class="side-div"></div> -->
 
 
-    <script src="scripts/search.js">
-      var testtest  = <?php echo $lookup ?>
-    </script>
+    <script src="scripts/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">
