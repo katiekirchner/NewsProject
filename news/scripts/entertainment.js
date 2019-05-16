@@ -28,7 +28,7 @@ request.onload = function() {
           var https = data[i].urlToImage.substring(0,5);
         }
 
-        if (data[i].content != null && (data[i].urlToImage != null || https != "https")){
+        if (data[i].content != null && (data[i].urlToImage != null || https == "https")){
           valid = true;
         };
 

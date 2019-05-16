@@ -25,12 +25,14 @@
               <ul class="nav navbar-nav pull-right">
                 <li class="nav-item" align="right">
                   <form class="form-inline my-2 my-lg-0" action="search.php" method="post">
-                    <input class="didot-font form-control mr-sm-2" name="search" type="search" placeholder="Search topic" aria-label="Search">
+                    <input class="didot-font form-control mr-sm-2" name="search" type="text" placeholder="Search topic" aria-label="Search">
                     <button class="didot-font btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                   </form>
                 </li>
               </ul>
             </div>
+
+
             <!-- <div>
               <ul class="nav navbar-nav pull-right">
                 <li class="nav-item" align="right">
