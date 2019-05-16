@@ -13,7 +13,7 @@
         <br><br>
 
         <h1 class="didot-font big-header centered" align="center">Science</h1><br>
-        <h2 class="didot-font centered" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
+        <h2 class="didot-font centered stamp" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
 
         <br>
         <hr class="white-hr">

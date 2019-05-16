@@ -1,6 +1,6 @@
 
  <nav class="navbar navbar-expand-lg sticky-top navbar-light white-navbar">
-            <a class="navbar-brand didot-font" align="center" style="margin-left: 20px;" href="home.php">Home</a>
+            <a class="navbar-brand didot-font" align="center" style="margin-left: 20px;" href="home.php">Top News</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -13,12 +13,23 @@
                 <li class="nav-item">
                   <a href="tech.php" class="didot-font" style="color: black;margin: 15px">Technology</a>
                 </li>
+                <li>
+                </li>
                 <li class="nav-item">
                   <a href="sports.php" class="didot-font" style="color: black; margin: 15px">Sports</a>
                 </li>
                 <li class="nav-item">
                   <a href="entertainment.php" class="didot-font" style="color: black; margin: 15px">Entertainment</a>
                 </li>
+              </ul>
+              <ul class="nav navbar-nav pull-right">
+                <li class="nav-item" align="right">
+                  <form class="form-inline my-2 my-lg-0" action="search.php" method="post">
+                    <input class="didot-font form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="didot-font btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </li>
+              </ul>
             </div>
             <!-- <div>
               <ul class="nav navbar-nav pull-right">
