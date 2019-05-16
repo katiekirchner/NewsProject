@@ -1,7 +1,4 @@
 var search  = param;
-console.log(search);
-
-
 var app = document.getElementById('root');
 
 var container = document.createElement('div');
@@ -10,10 +7,13 @@ container.setAttribute('class', 'side-div');
 app.appendChild(container);
 
 
+var date = new Date();
+date.setMonth(date.getMonth()-1);
+
+console.log(date);
+
 var request = new XMLHttpRequest();
-request.open('GET', 'https://newsapi.org/v2/everything?q='+
-                      search+
-                      '&from=2019-04-16&sortBy=publishedAt&apiKey=dda138d75e5741048e1a9902fdee83c0'
+request.open('GET', 'https://newsapi.org/v2/everything?q='+search+'&from='+date+'&sortBy=publishedAt&apiKey=dda138d75e5741048e1a9902fdee83c0'
                       , true);
 
 request.onload = function() {
@@ -61,7 +61,7 @@ request.onload = function() {
 
           var h1 = document.createElement('h1');
           h1.setAttribute('class', 'card-header');
-          h1.textContent = data[i].title.substring(0, dash);
+          h1.textContent = data[i].title;
 
           var description = document.createElement('p');
           description.setAttribute('class', 'card-desc');
