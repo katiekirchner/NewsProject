@@ -14,14 +14,15 @@
         <br><br>
         <?php
            if ($_POST['submit']){
-              echo   "<h1>" . $_POST['search'];
+             $lookup = $_POST['search'];
+              echo   '<h1 class="didot-font big-header centered" align="center">' . ucfirst($lookup);
            } else{
-               echo "<h5>Please enter a search word. </h5>";
+              echo "<h5>Please enter a search word. </h5>";
            }
 
         ?>
-        <!-- <h1 class="didot-font big-header centered" align="center">Search</h1><br>
-        <h2 class="didot-font centered stamp" align="center" style="color:white;"><?php include 'timestamp.php';?></h2> -->
+        <!-- <h1 class="didot-font big-header centered" align="center">Search</h1><br> -->
+        <h2 class="didot-font centered stamp" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
 
         <br>
         <hr class="white-hr">
@@ -31,7 +32,9 @@
         <!-- <div id="root" class="side-div"></div> -->
 
 
-    <!-- <script src="scripts/search.js"></script> -->
+    <script src="scripts/search.js">
+      var testtest  = <?php echo $lookup ?>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">
