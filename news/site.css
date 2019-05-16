@@ -84,7 +84,7 @@
 
   .card-image{
     height:  50vw !important;
-    width:  70vw !important;
+    width:  72vw !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -160,7 +160,7 @@
   margin-right: auto !important;
   margin: 10px;
   height: 22vw;
-  width: 34vw;
+  width: 33.5vw;
   /* max-width: 500px; */
   /* max-height: 300px; */
   min-width: auto;

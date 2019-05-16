@@ -31,7 +31,7 @@
         <!-- <div id="root" class="side-div"></div> -->
 
 
-    <!-- <script src="scripts/top_news.js"></script> -->
+    <!-- <script src="scripts/search.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">
