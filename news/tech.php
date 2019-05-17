@@ -22,7 +22,10 @@
 
 
         <!-- <div id="root" class="side-div"></div> -->
-
+        <div align="center">
+          <a href="https://newsapi.org/" class="didot-font centered" align="center" style="color:white;"> Thank you News API</a>
+        </div>
+        <br>
 
     <script src="scripts/tech.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
