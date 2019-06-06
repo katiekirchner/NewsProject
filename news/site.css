@@ -26,13 +26,15 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar; 
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 
 }
 
-.side-div::-webkit-scrollbar {
+/* .side-div::-webkit-scrollbar {
     display: none;
-}
+} */
+
+
 
 .a-card {
   position: absolute;
