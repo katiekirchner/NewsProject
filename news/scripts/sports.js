@@ -5,7 +5,6 @@ container.setAttribute('class', 'side-div');
 
 app.appendChild(container);
 
-
 var request = new XMLHttpRequest();
 request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=dda138d75e5741048e1a9902fdee83c0', true);
 
