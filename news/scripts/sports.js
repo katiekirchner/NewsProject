@@ -1,4 +1,3 @@
-
 var app = document.getElementById('root');
 
 var container = document.createElement('div');
