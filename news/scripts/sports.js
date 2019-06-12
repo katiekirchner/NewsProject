@@ -70,7 +70,6 @@ request.onload = function() {
           cont.setAttribute('class', 'cont-reading');
           cont.textContent = "Click to view full article.";
 
-
           // var button = document.createElement('button');
           // button.setAttribute('class', 'card-button');
           // button.setAttribute('onclick', 'addArticle()');
