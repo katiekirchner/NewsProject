@@ -18,5 +18,4 @@
 // function addArticle(){
 //     change_button[i].style.backgroundColor="#9fdfbf";
 //     change_button[i].textContent = "Added To My Articles";
-//
 // };
