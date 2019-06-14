@@ -1,6 +1,5 @@
 // var add_button = document.getElementsByClassName("card-button");
 // console.log(add_button);
-//
 // //
 // // [].forEach.call(add_button, function(addArticle) {
 // //     console.log(addArticle.id);
