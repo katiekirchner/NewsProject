@@ -6,7 +6,6 @@ $("#title2-button").click(function(){
   } else {
      title2.style.color = "black";
   }
-
 });
 
 $("#hour-pic").css("postion", "relative");
