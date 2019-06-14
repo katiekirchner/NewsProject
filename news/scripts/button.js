@@ -13,7 +13,6 @@
 //   var change_button = Object.values(Array.from(add_button[i]));
 //
 // }
-//
 // console.log(change_button);
 //
 // function addArticle(){
