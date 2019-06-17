@@ -84,7 +84,6 @@ request.onload = function() {
           card.appendChild(cont);
           // card.appendChild(button);
         };
-
    };
 } else {
   var errorMessage = document.createElement('marquee');
