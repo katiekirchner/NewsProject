@@ -74,6 +74,7 @@ request.onload = function() {
           // button.setAttribute('class', 'card-button');
           // button.setAttribute('onclick', 'addArticle()');
           // button.textContent = "Add to My Articles";
+          
           container.appendChild(card);
           card.appendChild(aWrapper);
           card.appendChild(image);
