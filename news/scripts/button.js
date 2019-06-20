@@ -10,7 +10,6 @@
 //
 // for (let i = 0 ; i < add_button.length; i++) {
 //   var change_button = Object.values(Array.from(add_button[i]));
-//
 // }
 // console.log(change_button);
 //
