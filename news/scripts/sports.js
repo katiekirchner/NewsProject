@@ -12,7 +12,6 @@ request.onload = function() {
   var objects = JSON.parse(this.response);
 
   if (request.status >= 200 && request.status < 400) {
-
       var data = Object.values(objects)[2];
 
       data.shift();
@@ -74,7 +73,7 @@ request.onload = function() {
           // button.setAttribute('class', 'card-button');
           // button.setAttribute('onclick', 'addArticle()');
           // button.textContent = "Add to My Articles";
-          
+
           container.appendChild(card);
           card.appendChild(aWrapper);
           card.appendChild(image);
