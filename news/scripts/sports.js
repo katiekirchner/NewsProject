@@ -29,7 +29,6 @@ request.onload = function() {
           valid = true;
         };
 
-
         if (valid){
           var image = document.createElement('img');
           image.setAttribute('class', 'card-image');
