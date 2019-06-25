@@ -17,7 +17,6 @@
            } else{
               echo "<h5>Please enter a search word. </h5>";
            }
-
         ?>
         <!-- <h1 class="didot-font big-header centered" align="center">Search</h1><br> -->
         <h2 class="didot-font centered stamp" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
