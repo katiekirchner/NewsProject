@@ -18,7 +18,6 @@
         <hr class="white-hr">
         <br>
         <div id="root"></div>
-
         <!-- <div id="root" class="side-div"></div> -->
         <div align="center">
           <a href="https://newsapi.org/" class="didot-font centered" align="center" style="color:white;"> Thank you News API</a>
