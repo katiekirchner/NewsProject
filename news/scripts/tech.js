@@ -2,7 +2,6 @@ var app = document.getElementById('root');
 
 var container = document.createElement('div');
 container.setAttribute('class', 'side-div');
-
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
