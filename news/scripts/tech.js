@@ -27,7 +27,6 @@ request.onload = function() {
         if (data[i].content != null && (data[i].urlToImage != null && https == "https")){
           valid = true;
         };
-
         if (valid){
           var image = document.createElement('img');
           image.setAttribute('class', 'card-image');
