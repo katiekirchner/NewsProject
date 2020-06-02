@@ -8,18 +8,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a href="science.php" class="didot-font" style="color: black;margin: 15px">Science</a>
+                  <a href="science.html" class="didot-font" style="color: black;margin: 15px">Science</a>
                 </li>
                 <li class="nav-item">
-                  <a href="tech.php" class="didot-font" style="color: black;margin: 15px">Technology</a>
+                  <a href="tech.html" class="didot-font" style="color: black;margin: 15px">Technology</a>
                 </li>
                 <li>
                 </li>
                 <li class="nav-item">
-                  <a href="sports.php" class="didot-font" style="color: black; margin: 15px">Sports</a>
+                  <a href="sports.html" class="didot-font" style="color: black; margin: 15px">Sports</a>
                 </li>
                 <li class="nav-item">
-                  <a href="entertainment.php" class="didot-font" style="color: black; margin: 15px">Entertainment</a>
+                  <a href="entertainment.html" class="didot-font" style="color: black; margin: 15px">Entertainment</a>
                 </li>
               </ul>
               <ul class="nav navbar-nav pull-right">
