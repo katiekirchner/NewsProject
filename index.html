@@ -52,7 +52,7 @@
         <br><br>
 
         <h1 class="didot-font big-header centered" align="center">Today's Top News</h1><br>
-        <h2 class="didot-font centered stamp" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
+        <h2 id="timestamp" class="didot-font centered stamp" align="center" style="color:white;"></h2>
 
         <br>
         <hr class="white-hr">
@@ -65,6 +65,23 @@
           <a href="https://newsapi.org/" class="didot-font centered" align="center" style="color:white;"> Thank you News API</a>
         </div>
         <br>
+
+
+   <script>
+      var timestamp = Date.now();
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        
+      var d = new Date(timestamp);
+
+      date = d.getDate();
+      year = d.getFullYear();
+      month = d.getMonth();
+
+      var ts = document.getElementById("timestamp");
+      ts.innerHTML = `${months[month]} ${date}, ${year}`;
+
+    </script>
+
     <script src="scripts/top_news.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
@@ -76,6 +93,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     </body>
 </html>
+
 
 
 

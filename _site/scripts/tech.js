@@ -5,7 +5,7 @@ container.setAttribute('class', 'side-div');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=dda138d75e5741048e1a9902fdee83c0', true);
+request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=d6ee6ef184744adc9bd26544c8fa51ac', true);
 
 request.onload = function() {
   var objects = JSON.parse(this.response);

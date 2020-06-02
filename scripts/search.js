@@ -13,7 +13,7 @@ date.setMonth(date.getMonth()-1);
 console.log(date);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://newsapi.org/v2/everything?q='+search+'&from='+date+'&sortBy=publishedAt&apiKey=dda138d75e5741048e1a9902fdee83c0'
+request.open('GET', 'https://newsapi.org/v2/everything?q='+search+'&from='+date+'&sortBy=publishedAt&apiKey=d6ee6ef184744adc9bd26544c8fa51ac'
                       , true);
 
 request.onload = function() {

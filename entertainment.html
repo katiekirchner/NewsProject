@@ -48,7 +48,7 @@
         <br><br>
 
         <h1 class="didot-font big-header centered" align="center">Entertainment</h1><br>
-        <h2 class="didot-font centered stamp" align="center" style="color:white;"><?php include 'timestamp.php';?></h2>
+        <h2 id="timestamp" class="didot-font centered stamp" align="center" style="color:white;"></h2>
 
         <br>
         <hr class="white-hr">
@@ -62,6 +62,22 @@
         <br>
 
     <script src="scripts/entertainment.js"></script>
+
+    <script>
+        var timestamp = Date.now();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+          
+        var d = new Date(timestamp);
+  
+        date = d.getDate();
+        year = d.getFullYear();
+        month = d.getMonth();
+  
+        var ts = document.getElementById("timestamp");
+        ts.innerHTML = `${months[month]} ${date}, ${year}`;
+  
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             crossorigin="anonymous">
