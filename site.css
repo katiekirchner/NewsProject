@@ -176,6 +176,8 @@ body {
               rgba(255, 255, 255, 0.2),
               rgba(255, 255, 255, 0.2)),
               url("images/coffeenews-min.jpg");
+    /* background-image: url("images/coffeenews-min.jpg");
+    opacity: .1; */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -216,8 +218,9 @@ body {
 
 
 .big-header{
-    font-size: 5vw;
+    font-size: 6vw;
     color: white;
+    -webkit-text-stroke: 1px black;
 }
 
 
