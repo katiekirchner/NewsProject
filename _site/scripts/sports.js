@@ -8,8 +8,6 @@ app.appendChild(container);
 var request = new XMLHttpRequest();
 request.open('GET', 'https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=d6ee6ef184744adc9bd26544c8fa51ac', true);
 
-request.send();
-
 request.onload = function() {
   var objects = JSON.parse(this.response);
 
@@ -94,3 +92,4 @@ request.onload = function() {
 
 };
 
+request.send();
