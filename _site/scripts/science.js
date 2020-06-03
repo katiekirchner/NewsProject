@@ -92,7 +92,7 @@ request.onload = function() {
    };
 } else {
   var errorMessage = document.createElement('marquee');
-  errorMessage.textContent = `Error accessing API`;
+  errorMessage.textContent = `Your free trial of NewAPI has expired, please upgrade`;
   app.appendChild(errorMessage);
 }
 
